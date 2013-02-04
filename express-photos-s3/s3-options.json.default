@@ -1,0 +1,6 @@
+{
+  "key": "<your key>",
+  "secret": "<your secret>",
+  "bucket": "<your bucket>",
+  "acl": "public-read"
+}

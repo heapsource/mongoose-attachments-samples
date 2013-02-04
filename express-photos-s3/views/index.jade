@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1 Express Photos
+  p Welcome to Express Photos
+
+  label Pick a File
+  form(enctype="multipart/form-data", action="/upload", method="POST")
+    label(for="photo") File
+    input(type="file", id="photo", name="photo")
+    br
+    input(type="submit", value="Submit")
+  br
+  h2 Photos
+    ul
+      each photo in photos
+        li
+          img(src="#{photo.photo.small.defaultUrl}")
